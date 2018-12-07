@@ -21,8 +21,8 @@
     
     <!-- JQuery 1.12.4 minified -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
-            crossorigin="anonymous">
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
+        crossorigin="anonymous">
     </script>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -31,83 +31,197 @@
         crossorigin="anonymous">
     </script>
 
-    <!-- Holder uses SVG to render image placeholders entirely in browser. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.js" 
-        integrity="sha384-X/8rUew/Aar6DbvwaGtr9cT4soKju1OuretmNySK5yysDLXjQZpU5gSkxGtv2pss" 
+    <!-- Jquery Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" 
+        integrity="sha384-gyd4qL89L3l3RHg1DIarsIoh4BT3/hmoq/DtYpJdyT5oPemVJIMdh6/qC4UJ12WJ" 
         crossorigin="anonymous">
     </script>
 
     <!-- Main files -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-
 </head>
 <body>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#tabs">Tabs</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </nav>
 
     <div class="container vertical-align">
+        <div class="jumbotron">
+            <h1 class="ca-title">B2Brazil<small class=""> - Development Test</small></h1>
+            <h3 class="ca-subtitle">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Mollitia quam illo saepe error, quos, ad non sequi ipsum velit earum, blanditiis tempore. 
+                Perspiciatis consequuntur deserunt ducimus nesciunt, voluptate laborum dicta!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Optio corporis non facilis praesentium asperiores nemo nihil neque odit, 
+                aperiam unde autem vitae blanditiis 
+                labore voluptate vel sit eum reprehenderit maxime.
+            </h3>
+            
+            <div class="row col-md-6 col-sm-6 pull-right">
+                <img class="img-responsive" src="./img/holder-600x400.svg">                        
+            </div>
 
-            <div class="jumbotron">
-
-                    <h1 class="ca-title">B2Brazil<small class=""> - Development Test</small></h1>
-                    <h3 class="ca-subtitle">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Mollitia quam illo saepe error, quos, ad non sequi ipsum velit earum, blanditiis tempore. 
-                        Perspiciatis consequuntur deserunt ducimus nesciunt, voluptate laborum dicta!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Optio corporis non facilis praesentium asperiores nemo nihil neque odit, 
-                        aperiam unde autem vitae blanditiis 
-                        labore voluptate vel sit eum reprehenderit maxime.
-                    </h3>
-                
-                    <div class="row col-md-6 col-sm-6 pull-right">
-                        <img class="img-responsive" src="./img/holder-600x400.svg">                        
-                    </div>
-
-                    <div class="row col-md-6 col-sm-6">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum similique expedita ea. 
-                            Voluptatem aperiam animi quod, dolorum fuga perferendis reprehenderit. 
-                            Incidunt voluptas quasi dolores assumenda veniam quia, temporibus mollitia nihil?
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sint necessitatibus, fuga rem animi veritatis consectetur dolores, 
-                            omnis deleniti quo nesciunt quidem, rerum similique dicta?
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Obcaecati voluptatem perferendis aliquam ipsam. 
-                            Deleniti obcaecati amet ea quas libero eius consequatur iusto, architecto debitis. 
-                            Blanditiis similique error quasi optio nobis.
-                        </p>
-                        <button type="button" class="btn btn-lg btn-primary">Learn more</button>
-                    </div>
-
+            <div class="row col-xs-12 col-sm-6 col-md-6 cta-txt-container">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum similique expedita ea. 
+                    Voluptatem aperiam animi quod, dolorum fuga perferendis reprehenderit. 
+                    Incidunt voluptas quasi dolores assumenda veniam quia, temporibus mollitia nihil?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sint necessitatibus, fuga rem animi veritatis consectetur dolores, 
+                    omnis deleniti quo nesciunt quidem, rerum similique dicta?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Obcaecati voluptatem perferendis aliquam ipsam. 
+                    Deleniti obcaecati amet ea quas libero eius consequatur iusto, architecto debitis. 
+                    Blanditiis similique error quasi optio nobis.
+                </p>
+                <button type="button" class="btn btn-lg btn-primary">Learn more</button>
             </div>
         </div>
+    </div>
 
+    <!-- Section two -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row col-md-6 col-sm-6 pull-right-sm pull-right-md pull-right-lg ">
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#names" aria-controls="names" role="tab" data-toggle="tab">Names</a>
+                    </li>
+                </ul>
+
+            <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Esse facilis magnam aliquam maiores, voluptate illo ut blanditiis quis, tempore 
+                        fuga quisquam incidunt libero reprehenderit exercitationem cum vel praesentium, 
+                        numquam dignissimos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Ea rerum dolore neque incidunt dolorum magni blanditiis nihil illum maiores, 
+                        provident ipsum iure, debitis quibusdam itaque totam sed harum numquam ullam!
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cumque pariatur enim totam eius, dolore voluptates odio iusto officia dolorum vero!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Pariatur amet sit facere deleniti eius id adipisci perspiciatis ea eum ullam, 
+                        quod omnis laborum explicabo consectetur maiores a, quam odit sapiente!
+                    </div>
+                    
+                    <div role="tabpanel" class="tab-pane" id="names">
+                        <table class="table table-striped" id="table-names">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Username</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" id="loadmore">Load More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-md-6 col-sm-6">
+                <img class="img-responsive" src="./img/holder-600x400.svg">                        
+            </div>
+        </div>
+    </div>
+
+    <!-- Section three -->
+    <div class="container">
+        <div class="row col-xs-12  col-sm-6 col-md-6 col-lg-6">
+            <form class="">
+                <div class="form-group form-grp-contact">
+                    <div class="form-title"><h2>Contact Us</h2></div>
+                    <div class="input-group-lg input-grp-contact">
+                        <input type="text" class="form-control" id="name"name="name" placeholder="Full Name" required>
+                        <input type="tel" class="form-control" id="tel" name="tel" data-mask="(00) 0000-0000" placeholder="Phone number" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <textarea class="form-control" id="message" rows="6" placeholder="Leave your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Send message</button>
+            </form>
+        </div>
+
+        <div class="row col-xs-12 col-sm-6 col-md-6 pull-right-sm pull-right-md pull-right-md pull-right-lg">            
+            <div class='embed-responsive embed-responsive-16by9 map-container'>
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d774382.6761693481!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova+York%2C+NY!5e0!3m2!1spt-BR!2sus!4v1544141092186" 
+                    width="600" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>        
     </div>
 </body>
 </html>
